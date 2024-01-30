@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0a3d62;
+}
+::-webkit-scrollbar-track {
+    background-color: hsl(33, 100%, 50%);
+}
+:root {
+    --H1: 50px;
+    --H2: 35px;
+    --H3: 30px;
+    --H4: 20px;
+    --H5: 18px;
+    --Paragraph: 15px;
+    --Blue: #3c6382;
+    --DarkBlue: #0a3d62;
+    --Grey: rgb(220,220,220);
+    --Red: rgb(255,0,0);
+    --White: rgb(255,255,255);
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    color: var(--Blue);
+    font-size: var(--H2);
+    font-weight: 400;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+body {
+    font-family: 'Rosario', sans-serif;
+    font-size: var(--Paragraph);
+}
+header {
+    background-color: white;
+    box-shadow: 0px 1px 20px rgba(0,0,0,0.2);
+    padding: 1rem 0rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1400px;
+    margin: auto;
+}
+header h4 {
+    color: var(--Blue);
+    font-size: var(--H4);
+    font-weight: bold;
+}
+header i {
+    color: var(--Blue);
+}
+header a {
+    color: var(--Blue);
+    margin-right: 2rem;
+}
+header a:hover {
+    background-color: var(--Blue);
+    border-radius: 6px;
+    color: var(--White);
+    padding: 0.3rem 1.2rem;
+}
+
+                /* MAIN SECTION */
+
+main article:first-child {
+    background-attachment: fixed;
+    background-image: url(../Images/Pandemic_Website/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 730px;
+}
+main article:first-child h1 {
+    color: var(--DarkBlue);
+    font-size: var(--H1);
+    padding-top: 3rem;
+    text-transform: capitalize;
+}
+main article:first-child h3 {
+    color: var(--Blue);
+    font-size: var(--H3);
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    text-transform: capitalize;
+}
+main article:first-child button {
+    background-color: var(--Blue);
+    border: none;
+    border-radius: 4px;
+    color: var(--White);
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem 1.5rem;
+    text-transform: capitalize;
+}
+main article:nth-child(2) div {
+    width: 1200px;
+    margin: auto;
+}
+main article:nth-child(2) section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+main article:nth-child(2) figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+main article:nth-child(2) img {
+    margin-bottom: 1rem;
+    object-fit: cover;
+    width: 100px;
+}
+main article:nth-child(2) h4 {
+    color: var(--DarkBlue);
+    font-size: var(--H4);
+    margin-bottom: 0.7rem;
+}
+main article:nth-child(2) p {
+    color: var(--DarkBlue);
+}
+.distance {
+    margin-top: 0.3rem;
+}
+.face {
+    margin-top: -1.1rem;
+}
+.place {
+    margin-top: -0.5rem;
+}
+main article:nth-child(3) {
+    background-image: url(../Images/Pandemic_Website/background-img.jpg);
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+main article:nth-child(3) div {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: auto;
+}
+main article:nth-child(3) div section:last-child {
+    display: grid;
+    grid-template-columns: 100px 120px 100px;
+    column-gap: 8rem;
+    row-gap: 0.1rem;
+    margin-left: 8rem;
+    text-align: center;
+}
+main article:nth-child(3) figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main article:nth-child(3) section:last-child img {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+main article:nth-child(3) h5 {
+    color: var(--Blue);
+    font-size: var(--H5);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+main article:nth-child(4) {
+    margin-bottom: 5rem;
+}
+main article:nth-child(4) div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    width: 1200px;
+    margin: auto;
+}
+main article:nth-child(4) section {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+main article:nth-child(4) section:first-child h4 {
+    background-color: var(--Blue);
+    color: var(--White);
+    font-size: var(--H4);
+    margin-bottom: 2rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+main article:nth-child(4) section:last-child h4 {
+    background-color: var(--Red);
+    color: var(--White);
+    font-size: var(--H4);
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+main article:nth-child(4) figure {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-bottom: 3rem;
+    padding: 0rem 1rem;
+}
+main article:nth-child(4) h5 {
+    color: var(--DarkBlue);
+    font-size: var(--H5);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+main article:nth-child(4) p {
+    color: var(--DarkBlue);
+    font-size: var(--Paragraph);
+    text-transform: capitalize;
+}
+main article:nth-child(5) {
+    background-image: url(../Images/Pandemic_Website/background-img.jpg);
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+main article:nth-child(5) section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+main article:nth-child(5) figure {
+    box-shadow: 1px 1px 10px #3c63824d;
+    margin-right: 0.1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    text-align: center;
+    width: 320px;
+}
+main article:nth-child(5) img {
+    background-color: var(--Blue);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+    padding: 2rem 0rem 0rem 0rem;
+    width: 250px;
+}
+main article:nth-child(5) h5 {
+    color: var(--DarkBlue);
+    font-size: var(--H5);
+    margin-bottom: 0.2rem;
+}
+main article:nth-child(5) p {
+    border-bottom: 1px solid var(--Grey);
+    color: var(--DarkBlue);
+    font-size: var(--Paragraph);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+main article:nth-child(5) i {
+    background-color: var(--Grey);
+    border-radius: 50%;
+    color: var(--Blue);
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    transition: all 0.1s;
+}
+main article:nth-child(5) i:hover {
+    background-color: var(--DarkBlue);
+    color: var(--White);
+    transform: rotate(360deg);
+}
+main article:nth-child(6) div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main article:nth-child(6) section:first-child {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    margin-top: 2rem;
+}
+main article:nth-child(6) section:first-child img {
+    margin-bottom: 0.5rem;
+    width: 150px;
+}
+main article:nth-child(6) section:last-child img {
+    width: 380px;
+}
+main article:nth-child(6)  h5 {
+    color: var(--Blue);
+    font-size: var(--H5);
+    text-transform: capitalize;
+}
+footer {
+    background-image: url(../Images/Pandemic_Website/background-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+footer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    width: 1100px;
+}
+footer section:first-child {
+    color: var(--DarkBlue);
+    text-transform: capitalize;
+    width: 350px;
+}
+footer h4 {
+    color: var(--Blue);
+    font-size: var(--H4);
+    margin-bottom: 1rem;
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+footer a {
+    color: var(--Blue);
+    margin-bottom: 1rem;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.Scroll {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.active {
+    opacity: 0;
+}
